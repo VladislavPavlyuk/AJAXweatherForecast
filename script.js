@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    const apiKey = '9f96446568932f33e34d2bd678cff58f';
+    const apiKey = '6343c8b1a1a94cf99ab120833251001';
     const city = 'Bratislava';
-    const url = `https://api.weatherstack.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&lang=en`;
-
+    //const url = `https://api.weatherstack.com/v1/forecast.json?access_key=${apiKey}&q=${city}&days=5&lang=en`;
+    const url ='https://api.weatherapi.com/v1/forecast.json?key=6343c8b1a1a94cf99ab120833251001&q=Bratislava&days=5&aqi=no&alerts=no';
 
     $.getJSON(url, function(data) {
         // Текущая погода
